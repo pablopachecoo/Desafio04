@@ -1,16 +1,9 @@
 package br.com.gft.model;
 
-<<<<<<< HEAD
 //Importando a Lista \\
 import java.util.List;
 
 // Atributos da Loja \\
-=======
-//Importando a Lista
-import java.util.List;
-
-// Atributos da Loja
->>>>>>> 4e01c0e71d365c8f30dfd4e1eaf58f73c82b5973
 public class Loja {
 	String Nome;
 	String cnpj;
@@ -63,11 +56,7 @@ public class Loja {
 		VideoGames = videoGames;
 	}
 
-<<<<<<< HEAD
 // METODO PARA LISTAR OS LIVROS \\
-=======
-// METODO PARA LISTAR OS LIVROS
->>>>>>> 4e01c0e71d365c8f30dfd4e1eaf58f73c82b5973
 	public void listaLivros() {
 		if (livros.size() >= 0) {
 			System.out.println(" ¦¦¦¦¦¦¦¦¦¦¦¦ Atualmente temos " + livros.size() + " Livros na Loja ¦¦¦¦¦¦¦¦");
@@ -82,12 +71,8 @@ public class Loja {
 		}
 
 	}
-<<<<<<< HEAD
 	
 // METODO PARA LISTAR VIDEOGAMES \\
-=======
-// METODO PARA LISTAR VIDEOGAMES
->>>>>>> 4e01c0e71d365c8f30dfd4e1eaf58f73c82b5973
 	public void listaVideoGames() {
 		// Mensagem com o Número de VideoGames
 		System.out.println(" ____________________________________________________" + "\n" + " Atualmente temos " + VideoGames.size() + " Videogames No estoque");
@@ -101,15 +86,9 @@ public class Loja {
 		}
 
 	}
-<<<<<<< HEAD
 // CALCULAR O PATRIMONIO TOTAL \\
 	public double calculaPatrimonio() {
 		System.out.println(" ____________________________________________________");
-=======
-// CALCULAR O PATRIMONIO TOTAL
-	public double calculaPatrimonio() {
-		System.out.println("  ___________________________________________________");
->>>>>>> 4e01c0e71d365c8f30dfd4e1eaf58f73c82b5973
 
 		double patrimonio = 0;
 		for (int i = 0; i < livros.size(); i++) {
@@ -120,13 +99,8 @@ public class Loja {
 			patrimonio += VideoGames.get(i).getPreco() * livros.get(i).getQnt();
 
 		}
-<<<<<<< HEAD
 		// OUTPUT DO PATRIMONIO \\
 		System.out.println("      O patrimonio da loja" + getNome() + "é de " + patrimonio);
-=======
-		// OUTPUT DO PATRIMONIO
-		System.out.println(" O patrimonio da loja" + getNome() + "é de " + patrimonio);
->>>>>>> 4e01c0e71d365c8f30dfd4e1eaf58f73c82b5973
 		return patrimonio;
 
 	}

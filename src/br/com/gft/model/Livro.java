@@ -1,5 +1,10 @@
 package br.com.gft.model;
 
+<<<<<<< HEAD
+=======
+import br.com.gft.interfaces.Imposto;
+
+>>>>>>> 4e01c0e71d365c8f30dfd4e1eaf58f73c82b5973
 public class Livro extends Produto {
 	String Autor;
 	String Tema;
@@ -49,11 +54,19 @@ public class Livro extends Produto {
 	public double calculaImposto() {
 		double valor = 0;
 		if (Tema == "educativo") {
+<<<<<<< HEAD
 			System.out.println("O livro (" + getNome() +  ") Não tem imposto, " + " Tema: " + getTema());
 			return 0;
 		} else {
 			valor = getPreco() * 0.10;
 			System.out.println("O valor do imposto sobre o livro (" + getNome() +  ") é de  " + valor + " Reais");
+=======
+			System.out.println("O livronao tem imposto");
+			return 0;
+		} else {
+			valor = getPreco() * 0.10;
+			System.out.println("O valor do imposto é " + valor);
+>>>>>>> 4e01c0e71d365c8f30dfd4e1eaf58f73c82b5973
 			return valor;
 
 		}

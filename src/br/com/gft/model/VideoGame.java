@@ -1,9 +1,17 @@
 package br.com.gft.model;
+
 // Atributos do VideoGame
 public class VideoGame extends Produto {
 	String Marca;
 	String Modelo;
 	boolean isUsado = false;
+
+
+public class VideoGame extends Produto {
+	String Marca;
+	String Modelo;
+	boolean isUsado;
+
 
 	public VideoGame() {
 
@@ -41,6 +49,7 @@ public class VideoGame extends Produto {
 	}
 
 	public double calculaImposto() {
+
 		double valor = 0;
 		if (isUsado = true && getNome() == "ps4usado") {
 			valor = getPreco() * 0.25;
@@ -50,6 +59,9 @@ public class VideoGame extends Produto {
 			System.out.println("O valor do imposto no " + getNome() + " é de " + valor + " Reais" + "\n" + "  _____________________________________________________");
 		}
 		return valor;
+=======
+		return 0;
+
 
 			
 		}
